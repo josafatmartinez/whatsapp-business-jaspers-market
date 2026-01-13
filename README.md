@@ -6,7 +6,7 @@ Jasper's Market is a fictional grocery brand created to showcase key features of
 
 See the [Developer Documentation on this experience](https://developers.facebook.com/documentation/business-messaging/whatsapp/overview).
 
-# Setting up your WhatsApp App
+## Setting up your WhatsApp App
 
 ## Requirements
 
@@ -34,13 +34,13 @@ Before you begin, make sure you have completed all of the requirements listed ab
 3. Now you should be in the App's WhatsApp Settings.
 4. Navigate to the _Configuration_ tab.
 
-# Installation
+## Installation
 
 Clone this repository on your local machine:
 
 ```bash
-$ git clone git@github.com:fbsamples/whatsapp-business-jaspers-market.git
-$ cd whatsapp-business-jaspers-market
+git clone git@github.com:fbsamples/whatsapp-business-jaspers-market.git
+cd whatsapp-business-jaspers-market
 ```
 
 You will need:
@@ -48,14 +48,16 @@ You will need:
 - [Node](https://nodejs.org/en/) 10.x or higher
 - Remote server service, a local tunneling service such as [ngrok](https://ngrok.com/), or your own webserver.
 
-# Usage
+## Usage
 
-## Using ngrok
+### Using ngrok
 
 #### 1. Setup templates
+
 In order for the app to send templated messages, you need to first create those templates under your WhatsApp Business Account. You can either do this by running `./template.sh` or through [WhatsApp Manager](https://business.facebook.com/latest/whatsapp_manager/message_templates).
 
 #### 2. Install Redis
+
 If not already installed, install redis via [download](https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/).
 
 You can then start a redis daemon locally via command line:
@@ -73,6 +75,7 @@ npm install -g ngrok
 ```
 
 In the directory of this repo, request a tunnel to your local server with your preferred port
+
 ```bash
 ngrok http 8080
 ```
@@ -91,6 +94,7 @@ Forwarding                    https://1c3b838deacb.ngrok.io -> http://localhost:
 Connections                   ttl     opn     rt1     rt5     p50     p90
                               0       0       0.00    0.00    0.00    0.00
 ```
+
 Note the https URL of the external server that is forwarded to your local machine. In the above example, it is `https://1c3b838deacb.ngrok.io`.
 
 #### 4. Install the dependencies
@@ -98,13 +102,13 @@ Note the https URL of the external server that is forwarded to your local machin
 Open a new terminal tab, also in the repo directory.
 
 ```bash
-$ npm install
+npm install
 ```
 
 Alternatively, you can use [Yarn](https://yarnpkg.com/en/):
 
 ```bash
-$ yarn install
+yarn install
 ```
 
 #### 5. Set up .env file
@@ -141,5 +145,5 @@ Sample WhatsApp App Jasper's Market is Apache 2.0 licensed, as found in the LICE
 
 See the [CONTRIBUTING](CONTRIBUTING.md) file for how to help out.
 
-Terms of Use - https://opensource.facebook.com/legal/terms
-Privacy Policy - https://opensource.facebook.com/legal/privacy
+Terms of Use - <https://opensource.facebook.com/legal/terms>
+Privacy Policy - <https://opensource.facebook.com/legal/privacy>
