@@ -19,7 +19,7 @@ See the [Developer Documentation on this experience](https://developers.facebook
 
 Before you begin, make sure you have completed all of the requirements listed above. At this point you should have a Business and a registered Meta App.
 
-#### Get the App id, App Secret, App Token, and Waba id
+### Get the App id, App Secret, App Token, and Waba id
 
 1. Go to your app Basic Settings, [Find your app here](https://developers.facebook.com/apps)
 2. Save the **App ID** number and the **App Secret**
@@ -82,7 +82,7 @@ ngrok http 8080
 
 The screen should show the ngrok status:
 
-```
+```text
 Session Status                online
 Account                       Redacted (Plan: Free)
 Version                       2.3.35
